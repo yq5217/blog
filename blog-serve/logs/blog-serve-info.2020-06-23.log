@@ -1,0 +1,644 @@
+2020-06-23 21:50:57.419 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 15896 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 21:50:57.421 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 21:50:59.046 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 21:50:59.220 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 127ms. Found 1 JPA repository interfaces.
+2020-06-23 21:50:59.524 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@62315f22' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:50:59.527 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:50:59.908 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 21:50:59.915 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:50:59.915 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 21:50:59.915 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 21:50:59.917 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 21:50:59.917 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 21:50:59.917 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 21:50:59.943 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 21:51:00.026 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 21:51:00.026 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 2573 ms
+2020-06-23 21:51:00.559 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 21:51:00.901 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:51:02.296 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d8796c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@3134153d, org.springframework.security.web.header.HeaderWriterFilter@4f8d86e4, org.springframework.web.filter.CorsFilter@2e26173, org.springframework.security.web.csrf.CsrfFilter@3976ebfa, org.springframework.security.web.authentication.logout.LogoutFilter@311ff287, com.yang.blog.security.filter.JwtLoginFilter@27be17c8, com.yang.blog.security.filter.JwtAuthenticationFilter@2c413ffc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f5effb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3468ee6e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d21852b, org.springframework.security.web.session.SessionManagementFilter@1697f2b3, org.springframework.security.web.access.ExceptionTranslationFilter@e38f0b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1084f78c]
+2020-06-23 21:51:02.345 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:51:02.362 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 21:51:02.363 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 21:51:04.259 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 21:51:04.259 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:51:04.263 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:51:05.168 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 21:51:05.170 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:51:05.173 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:51:05.178 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 21:51:49.342 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 15724 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 21:51:49.344 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 21:51:49.907 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 21:51:49.953 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 21:51:57.594 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 12552 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 21:51:57.597 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 21:51:58.147 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 21:51:58.190 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 21:55:09.831 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 15664 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 21:55:09.835 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 21:55:10.382 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 21:55:10.424 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 21:55:10.632 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@e044b4a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:55:10.634 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:55:10.785 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 21:55:10.791 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:55:10.791 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 21:55:10.792 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 21:55:10.792 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 21:55:10.793 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 21:55:10.793 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 21:55:10.795 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 21:55:10.861 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 21:55:10.861 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 996 ms
+2020-06-23 21:55:11.037 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 21:55:11.203 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:55:11.691 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e0fbeb5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fb53256, org.springframework.security.web.header.HeaderWriterFilter@697173d9, org.springframework.web.filter.CorsFilter@3976ebfa, org.springframework.security.web.csrf.CsrfFilter@41da3aee, org.springframework.security.web.authentication.logout.LogoutFilter@20a7953c, com.yang.blog.security.filter.JwtLoginFilter@2676dc05, com.yang.blog.security.filter.JwtAuthenticationFilter@b0a1231, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27329d2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@326e0b8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4833eff3, org.springframework.security.web.session.SessionManagementFilter@3d90eeb3, org.springframework.security.web.access.ExceptionTranslationFilter@1945113f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1eff3cfb]
+2020-06-23 21:55:11.722 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:55:11.736 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 21:55:11.738 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 21:55:12.714 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 21:55:12.715 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:55:12.718 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:55:13.618 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 21:55:13.621 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:55:13.623 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:55:13.626 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 21:56:17.530 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 7864 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 21:56:17.533 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 21:56:18.097 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 21:56:18.137 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 21:56:18.347 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3af37506' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:56:18.350 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:56:18.513 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 21:56:18.519 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:56:18.520 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 21:56:18.520 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 21:56:18.521 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 21:56:18.521 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 21:56:18.521 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 21:56:18.524 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 21:56:18.615 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 21:56:18.615 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1053 ms
+2020-06-23 21:56:18.791 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 21:56:18.959 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:56:19.456 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dd2856e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1db87583, org.springframework.security.web.header.HeaderWriterFilter@45aca496, org.springframework.web.filter.CorsFilter@5a49af50, org.springframework.security.web.csrf.CsrfFilter@1ee47d9e, org.springframework.security.web.authentication.logout.LogoutFilter@48e8c32a, com.yang.blog.security.filter.JwtLoginFilter@3b1dc579, com.yang.blog.security.filter.JwtAuthenticationFilter@793d163b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d6d1d42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57545c3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60dd0587, org.springframework.security.web.session.SessionManagementFilter@ceddaf8, org.springframework.security.web.access.ExceptionTranslationFilter@5f174dd2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a0f2853]
+2020-06-23 21:56:19.488 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:56:19.503 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 21:56:19.504 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 21:56:20.525 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 21:56:20.525 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:56:20.529 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:56:21.444 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 21:56:21.446 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:56:21.448 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:56:21.454 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 21:57:15.673 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 11900 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 21:57:15.676 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 21:57:16.239 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 21:57:16.277 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 32ms. Found 1 JPA repository interfaces.
+2020-06-23 21:57:16.495 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@110844f6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:57:16.498 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 21:57:16.650 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 21:57:16.656 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:57:16.656 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 21:57:16.656 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 21:57:16.657 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 21:57:16.658 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 21:57:16.658 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 21:57:16.660 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 21:57:16.726 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 21:57:16.726 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1020 ms
+2020-06-23 21:57:16.901 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 21:57:17.065 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:57:17.566 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e4e8fdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a916402, org.springframework.security.web.header.HeaderWriterFilter@53c1179a, org.springframework.web.filter.CorsFilter@6a1d6ef2, org.springframework.security.web.csrf.CsrfFilter@5ebffb44, org.springframework.security.web.authentication.logout.LogoutFilter@7d21852b, com.yang.blog.security.filter.JwtLoginFilter@2721044, com.yang.blog.security.filter.JwtAuthenticationFilter@205df5dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d2a2560, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f2d31af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6aa7b67f, org.springframework.security.web.session.SessionManagementFilter@5034f5dd, org.springframework.security.web.access.ExceptionTranslationFilter@7cfb4736, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cfc2538]
+2020-06-23 21:57:17.597 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:57:17.611 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 21:57:17.613 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 21:57:18.611 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 21:57:18.611 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 21:57:18.614 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:57:19.529 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 21:57:19.531 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:57:19.533 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 21:57:19.537 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:01:03.852 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 10940 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:01:03.854 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:01:04.407 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:01:04.446 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 22:01:04.649 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4a325eb9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:01:04.651 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:01:04.801 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:01:04.806 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:01:04.807 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:01:04.807 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:01:04.808 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:01:04.808 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:01:04.808 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:01:04.810 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:01:04.876 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:01:04.877 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 994 ms
+2020-06-23 22:01:05.048 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:01:05.213 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:01:05.709 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@591a4f8e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fd9893c, org.springframework.security.web.header.HeaderWriterFilter@575b5f7d, org.springframework.web.filter.CorsFilter@53ed80d3, org.springframework.security.web.csrf.CsrfFilter@cb39552, org.springframework.security.web.authentication.logout.LogoutFilter@1ee47d9e, com.yang.blog.security.filter.JwtLoginFilter@6ba060f3, com.yang.blog.security.filter.JwtAuthenticationFilter@7c51782d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44be69aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2eed37f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77bc2e16, org.springframework.security.web.session.SessionManagementFilter@7165d530, org.springframework.security.web.access.ExceptionTranslationFilter@64f981e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34585ac9]
+2020-06-23 22:01:05.740 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:01:05.755 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:01:05.756 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:01:06.748 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:01:06.749 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:01:06.752 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:01:07.652 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:01:07.654 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:01:07.656 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:01:07.660 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:03:52.772 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 12456 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:03:52.775 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:03:53.311 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:03:53.351 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 22:03:53.558 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@c827db' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:03:53.560 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:03:53.709 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:03:53.714 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:03:53.715 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:03:53.715 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:03:53.716 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:03:53.716 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:03:53.716 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:03:53.718 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:03:53.785 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:03:53.785 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 982 ms
+2020-06-23 22:03:53.958 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:03:54.117 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:03:54.621 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a565afb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4baed682, org.springframework.security.web.header.HeaderWriterFilter@31120021, org.springframework.web.filter.CorsFilter@2fd64b11, org.springframework.security.web.csrf.CsrfFilter@2e7157c7, org.springframework.security.web.authentication.logout.LogoutFilter@124d02b2, com.yang.blog.security.filter.JwtLoginFilter@949c598, com.yang.blog.security.filter.JwtAuthenticationFilter@43d3aba5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@203d1d93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3664f108, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bfaa0a6, org.springframework.security.web.session.SessionManagementFilter@58606c91, org.springframework.security.web.access.ExceptionTranslationFilter@4fc5563d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a1706e1]
+2020-06-23 22:03:54.652 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:03:54.667 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:03:54.669 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:03:55.616 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:03:55.616 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:03:55.619 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:03:56.512 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:03:56.515 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:03:56.516 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:03:56.521 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:10:02.098 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 16064 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:10:02.101 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:10:02.643 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:10:02.681 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 22:10:02.900 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@df1cff6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:10:02.904 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:10:03.067 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:10:03.073 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:10:03.074 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:10:03.074 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:10:03.075 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:10:03.075 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:10:03.075 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:10:03.077 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:10:03.144 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:10:03.144 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1013 ms
+2020-06-23 22:10:03.317 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:10:03.479 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:10:04.039 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e86807a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25f723b0, org.springframework.security.web.header.HeaderWriterFilter@3811510, org.springframework.web.filter.CorsFilter@4548d254, org.springframework.security.web.csrf.CsrfFilter@1220ef43, org.springframework.security.web.authentication.logout.LogoutFilter@2c2a027c, com.yang.blog.security.filter.JwtLoginFilter@590f0c50, com.yang.blog.security.filter.JwtAuthenticationFilter@208f0007, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40d60f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c413ffc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a90c13c, org.springframework.security.web.session.SessionManagementFilter@18539cb1, org.springframework.security.web.access.ExceptionTranslationFilter@6d2a2560, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61514735]
+2020-06-23 22:10:04.070 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:10:04.085 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:10:04.087 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:10:05.059 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:10:05.059 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:10:05.062 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:10:05.983 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:10:05.986 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:10:05.988 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:10:05.992 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:14:00.617 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 12916 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:14:00.620 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:14:01.163 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:14:01.202 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 32ms. Found 1 JPA repository interfaces.
+2020-06-23 22:14:01.406 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@673bb956' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:14:01.408 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:14:01.557 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:14:01.562 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:01.563 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:14:01.563 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:14:01.564 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:14:01.564 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:14:01.564 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:14:01.567 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:14:01.633 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:14:01.633 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 982 ms
+2020-06-23 22:14:01.807 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:14:01.968 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:14:02.456 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22d9bc14, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fc420b8, org.springframework.security.web.header.HeaderWriterFilter@338766de, org.springframework.web.filter.CorsFilter@346f41a9, org.springframework.security.web.csrf.CsrfFilter@6a0f2853, org.springframework.security.web.authentication.logout.LogoutFilter@235d659c, com.yang.blog.security.filter.JwtLoginFilter@1084f78c, com.yang.blog.security.filter.JwtAuthenticationFilter@25f723b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e38f0b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3134153d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4aa11206, org.springframework.security.web.session.SessionManagementFilter@4976085, org.springframework.security.web.access.ExceptionTranslationFilter@77f905e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24eeac69]
+2020-06-23 22:14:02.486 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:02.500 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:14:02.502 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:14:03.462 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:14:03.462 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:14:03.466 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:04.366 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:14:04.369 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:04.370 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:04.374 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:14:22.966 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 6756 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:14:22.968 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:14:23.512 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:14:23.551 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 22:14:23.763 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@df1cff6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:14:23.766 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:14:23.912 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:14:23.918 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:23.918 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:14:23.918 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:14:23.919 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:14:23.919 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:14:23.919 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:14:23.922 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:14:23.987 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:14:23.988 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 991 ms
+2020-06-23 22:14:24.165 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:14:24.327 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:14:24.830 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a565afb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4baed682, org.springframework.security.web.header.HeaderWriterFilter@31120021, org.springframework.web.filter.CorsFilter@2fd64b11, org.springframework.security.web.csrf.CsrfFilter@2e7157c7, org.springframework.security.web.authentication.logout.LogoutFilter@124d02b2, com.yang.blog.security.filter.JwtLoginFilter@949c598, com.yang.blog.security.filter.JwtAuthenticationFilter@43d3aba5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@203d1d93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3664f108, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bfaa0a6, org.springframework.security.web.session.SessionManagementFilter@58606c91, org.springframework.security.web.access.ExceptionTranslationFilter@4fc5563d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a1706e1]
+2020-06-23 22:14:24.860 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:24.875 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:14:24.877 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:14:25.827 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:14:25.827 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:14:25.831 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:26.724 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:14:26.727 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:26.728 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:26.733 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:14:42.885 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 12920 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:14:42.887 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:14:43.438 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:14:43.480 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+2020-06-23 22:14:43.686 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@73d6d0c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:14:43.688 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:14:43.839 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:14:43.845 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:43.845 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:14:43.845 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:14:43.846 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:14:43.846 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:14:43.846 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:14:43.849 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:14:43.914 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:14:43.914 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 996 ms
+2020-06-23 22:14:44.087 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:14:44.248 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:14:44.747 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25f723b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1192b58e, org.springframework.security.web.header.HeaderWriterFilter@777d191f, org.springframework.web.filter.CorsFilter@4aa11206, org.springframework.security.web.csrf.CsrfFilter@6dc1dc69, org.springframework.security.web.authentication.logout.LogoutFilter@f5ce0bb, com.yang.blog.security.filter.JwtLoginFilter@40d60f2, com.yang.blog.security.filter.JwtAuthenticationFilter@3382cf68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f631ca0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25d0cb3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f74900b, org.springframework.security.web.session.SessionManagementFilter@31142d58, org.springframework.security.web.access.ExceptionTranslationFilter@3b7eac14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f2d31af]
+2020-06-23 22:14:44.778 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:44.793 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:14:44.795 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:14:45.867 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:14:45.867 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:14:45.870 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:46.768 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:14:46.770 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:46.772 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:14:46.777 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:15:53.717 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 12380 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:15:53.720 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:15:54.251 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:15:54.289 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 32ms. Found 1 JPA repository interfaces.
+2020-06-23 22:15:54.504 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6f815e7f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:15:54.508 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:15:54.663 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:15:54.669 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:15:54.669 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:15:54.669 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:15:54.670 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:15:54.670 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:15:54.671 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:15:54.673 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:15:54.739 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:15:54.739 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 989 ms
+2020-06-23 22:15:54.912 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:15:55.070 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:15:55.561 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2525a5b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@109f8c7e, org.springframework.security.web.header.HeaderWriterFilter@5ebffb44, org.springframework.web.filter.CorsFilter@3458eca5, org.springframework.security.web.csrf.CsrfFilter@767599a7, org.springframework.security.web.authentication.logout.LogoutFilter@6d2a2560, com.yang.blog.security.filter.JwtLoginFilter@1e0fdb2f, com.yang.blog.security.filter.JwtAuthenticationFilter@3c380bd8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16a5eb6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bcaa195, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34b87182, org.springframework.security.web.session.SessionManagementFilter@7377781e, org.springframework.security.web.access.ExceptionTranslationFilter@101a461c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d979d34]
+2020-06-23 22:15:55.592 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:15:55.606 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:15:55.608 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:15:56.567 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:15:56.568 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:15:56.571 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:15:57.464 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:15:57.465 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:15:57.467 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:15:57.472 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:21:30.818 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 3300 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:21:30.820 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:21:31.361 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:21:31.399 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 32ms. Found 1 JPA repository interfaces.
+2020-06-23 22:21:31.602 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@19f21b6b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:21:31.604 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:21:31.753 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:21:31.758 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:21:31.759 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:21:31.759 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:21:31.760 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:21:31.760 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:21:31.760 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:21:31.763 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:21:31.827 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:21:31.828 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 979 ms
+2020-06-23 22:21:32.002 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:21:32.161 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:21:32.639 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@350ec690, org.springframework.security.web.context.SecurityContextPersistenceFilter@360e9c06, org.springframework.security.web.header.HeaderWriterFilter@2da16263, org.springframework.web.filter.CorsFilter@49cb1baf, org.springframework.security.web.csrf.CsrfFilter@4f8d86e4, org.springframework.security.web.authentication.logout.LogoutFilter@7650ded6, com.yang.blog.security.filter.JwtLoginFilter@3664f108, com.yang.blog.security.filter.JwtAuthenticationFilter@77dba4cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@311ff287, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e307087, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34a2d6e0, org.springframework.security.web.session.SessionManagementFilter@47e51549, org.springframework.security.web.access.ExceptionTranslationFilter@235d659c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4baed682]
+2020-06-23 22:21:32.670 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:21:32.684 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:21:32.685 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:21:33.670 [main] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:21:33.670 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:21:33.673 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:21:34.566 [main] INFO  [org.apache.catalina.core.StandardService:173] - Stopping service [Tomcat]
+2020-06-23 22:21:34.568 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:21:34.570 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:21:34.574 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 22:24:39.228 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 15268 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:24:39.230 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:24:39.772 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:24:39.810 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 22:24:40.020 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7f4037ed' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:24:40.024 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:24:40.178 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:24:40.184 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:24:40.184 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:24:40.184 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:24:40.185 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:24:40.185 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:24:40.186 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:24:40.188 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:24:40.254 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:24:40.255 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 997 ms
+2020-06-23 22:24:40.433 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:24:40.595 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:24:41.118 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a4ab7f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cd98a05, org.springframework.security.web.header.HeaderWriterFilter@2e26173, org.springframework.web.filter.CorsFilter@6badba10, org.springframework.security.web.csrf.CsrfFilter@31b7d869, org.springframework.security.web.authentication.logout.LogoutFilter@1e0fdb2f, com.yang.blog.security.filter.JwtLoginFilter@2b7e8044, com.yang.blog.security.filter.JwtAuthenticationFilter@550de6b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e95b653, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58606c91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a1706e1, org.springframework.security.web.session.SessionManagementFilter@2c413ffc, org.springframework.security.web.access.ExceptionTranslationFilter@2f74900b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a90c13c]
+2020-06-23 22:24:41.149 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:24:41.164 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:24:41.165 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:24:48.859 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:24:49.404 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:24:49.429 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 10.439 seconds (JVM running for 12.007)
+2020-06-23 22:31:13.014 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 9928 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:31:13.016 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:31:13.575 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:31:13.615 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
+2020-06-23 22:31:13.829 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@210f0cc1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:31:13.832 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:31:13.982 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:31:13.988 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:31:13.988 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:31:13.988 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:31:13.989 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:31:13.990 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:31:13.990 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:31:13.992 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:31:14.059 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:31:14.059 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1014 ms
+2020-06-23 22:31:14.234 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:31:14.396 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:31:14.897 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a47a1e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a49af50, org.springframework.security.web.header.HeaderWriterFilter@4833eff3, org.springframework.web.filter.CorsFilter@6d2a2560, org.springframework.security.web.csrf.CsrfFilter@41b13f3d, org.springframework.security.web.authentication.logout.LogoutFilter@6e3eb0cd, com.yang.blog.security.filter.JwtLoginFilter@62d1dc3c, com.yang.blog.security.filter.JwtAuthenticationFilter@3811510, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@793d163b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4976085, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24eeac69, org.springframework.security.web.session.SessionManagementFilter@56928e17, org.springframework.security.web.access.ExceptionTranslationFilter@2676dc05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a097d77]
+2020-06-23 22:31:14.928 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:31:14.943 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:31:14.944 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:31:16.527 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:31:16.686 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:31:16.691 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 3.909 seconds (JVM running for 5.488)
+2020-06-23 22:32:42.411 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 11220 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:32:42.414 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:32:43.086 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:32:43.128 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 35ms. Found 1 JPA repository interfaces.
+2020-06-23 22:32:43.376 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7d04529c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:32:43.380 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:32:43.572 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:32:43.579 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:32:43.580 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:32:43.580 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:32:43.581 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:32:43.581 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:32:43.582 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:32:43.585 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:32:43.668 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:32:43.668 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1218 ms
+2020-06-23 22:32:43.869 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:32:44.105 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:32:44.660 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64c25a62, org.springframework.security.web.context.SecurityContextPersistenceFilter@c0c8f96, org.springframework.security.web.header.HeaderWriterFilter@5d601832, org.springframework.web.filter.CorsFilter@43e8f1c, org.springframework.security.web.csrf.CsrfFilter@5cce40d7, org.springframework.security.web.authentication.logout.LogoutFilter@7b377a53, com.yang.blog.security.filter.JwtLoginFilter@66a82a13, com.yang.blog.security.filter.JwtAuthenticationFilter@675ec28b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e52ed5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@147efd9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11399548, org.springframework.security.web.session.SessionManagementFilter@640c216b, org.springframework.security.web.access.ExceptionTranslationFilter@74a58a06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f5ce33e]
+2020-06-23 22:32:44.699 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:32:44.721 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:32:44.723 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:32:46.370 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:32:46.727 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:32:46.733 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.6 seconds (JVM running for 6.561)
+2020-06-23 22:33:15.698 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 22:33:15.698 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 22:33:15.705 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 7 ms
+2020-06-23 22:33:46.397 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:33:46.399 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:33:52.576 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 768 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:33:52.579 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:33:53.217 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:33:53.260 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+2020-06-23 22:33:53.499 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3f685162' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:33:53.502 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:33:53.698 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:33:53.706 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:33:53.706 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:33:53.706 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:33:53.708 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:33:53.708 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:33:53.709 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:33:53.711 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:33:53.799 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:33:53.799 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1183 ms
+2020-06-23 22:33:53.999 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:33:54.259 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:33:54.800 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64dc86c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4628a02b, org.springframework.security.web.header.HeaderWriterFilter@7e0f9528, org.springframework.web.filter.CorsFilter@26874f2c, org.springframework.security.web.csrf.CsrfFilter@6682e6a5, org.springframework.security.web.authentication.logout.LogoutFilter@71369e1a, com.yang.blog.security.filter.JwtLoginFilter@5f3b84bd, com.yang.blog.security.filter.JwtAuthenticationFilter@1e734eee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51424203, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@721bf7ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e191150, org.springframework.security.web.session.SessionManagementFilter@237b2852, org.springframework.security.web.access.ExceptionTranslationFilter@401788d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13ca16bf]
+2020-06-23 22:33:54.835 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:33:54.854 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:33:54.856 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:33:56.270 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:33:56.617 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:33:56.623 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.355 seconds (JVM running for 5.98)
+2020-06-23 22:34:09.455 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 22:34:09.455 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 22:34:09.463 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 7 ms
+2020-06-23 22:46:10.489 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:46:10.491 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:46:16.683 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 6724 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:46:16.686 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:46:17.368 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:46:17.411 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+2020-06-23 22:46:17.652 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@33899f7a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:46:17.655 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:46:17.842 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:46:17.850 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:46:17.850 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:46:17.850 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:46:17.851 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:46:17.851 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:46:17.852 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:46:17.854 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:46:17.940 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:46:17.941 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1212 ms
+2020-06-23 22:46:18.139 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:46:18.388 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:46:18.931 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23ea8830, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a717d79, org.springframework.security.web.header.HeaderWriterFilter@53bb71e5, org.springframework.web.filter.CorsFilter@59a09be, org.springframework.security.web.csrf.CsrfFilter@42730828, org.springframework.security.web.authentication.logout.LogoutFilter@5599b5bb, com.yang.blog.security.filter.JwtLoginFilter@790ac3e0, com.yang.blog.security.filter.JwtAuthenticationFilter@5bb2fb2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13aed42b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10e56da9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cee5365, org.springframework.security.web.session.SessionManagementFilter@15994b0b, org.springframework.security.web.access.ExceptionTranslationFilter@6704df84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75ed125a]
+2020-06-23 22:46:18.966 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:46:18.984 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:46:18.986 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:46:20.440 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:46:20.800 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:46:20.806 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.445 seconds (JVM running for 6.181)
+2020-06-23 22:47:14.590 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 22:47:14.590 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 22:47:14.596 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 5 ms
+2020-06-23 22:56:41.825 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:56:41.826 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:56:48.078 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 9856 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:56:48.081 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:56:48.712 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:56:48.754 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 35ms. Found 1 JPA repository interfaces.
+2020-06-23 22:56:48.980 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@9b21bd3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:56:48.984 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:56:49.161 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:56:49.167 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:56:49.168 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:56:49.168 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:56:49.169 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:56:49.169 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:56:49.169 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:56:49.172 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:56:49.255 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:56:49.255 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1139 ms
+2020-06-23 22:56:49.447 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:56:49.688 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:56:50.218 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10e56da9, org.springframework.security.web.context.SecurityContextPersistenceFilter@62735b13, org.springframework.security.web.header.HeaderWriterFilter@1515f782, org.springframework.web.filter.CorsFilter@28cb86b2, org.springframework.security.web.csrf.CsrfFilter@4601047, org.springframework.security.web.authentication.logout.LogoutFilter@40dd552c, com.yang.blog.security.filter.JwtLoginFilter@22ae905f, com.yang.blog.security.filter.JwtAuthenticationFilter@748904e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ef5dd23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11399548, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fbaa7f5, org.springframework.security.web.session.SessionManagementFilter@638afcaa, org.springframework.security.web.access.ExceptionTranslationFilter@635ff2a5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cb00fa5]
+2020-06-23 22:56:50.252 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:56:50.271 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:56:50.273 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:56:51.646 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:56:51.990 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:56:51.995 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.216 seconds (JVM running for 5.841)
+2020-06-23 22:57:11.168 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 22:57:11.168 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 22:57:11.174 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 6 ms
+2020-06-23 22:59:46.087 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:59:46.088 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:59:52.159 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 9740 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 22:59:52.162 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 22:59:52.819 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 22:59:52.862 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 35ms. Found 1 JPA repository interfaces.
+2020-06-23 22:59:53.355 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7915bca3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:59:53.358 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 22:59:53.541 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 22:59:53.548 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:59:53.548 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 22:59:53.548 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 22:59:53.550 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 22:59:53.550 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 22:59:53.550 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 22:59:53.552 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 22:59:53.641 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 22:59:53.641 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1437 ms
+2020-06-23 22:59:53.838 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 22:59:54.087 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 22:59:54.622 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af36922, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b0e031b, org.springframework.security.web.header.HeaderWriterFilter@49653791, org.springframework.web.filter.CorsFilter@609b041c, org.springframework.security.web.csrf.CsrfFilter@3bd08435, org.springframework.security.web.authentication.logout.LogoutFilter@63e4484d, com.yang.blog.security.filter.JwtLoginFilter@474e34e4, com.yang.blog.security.filter.JwtAuthenticationFilter@7e2c6702, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65844c96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@563317c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb7ab9c, org.springframework.security.web.session.SessionManagementFilter@c212536, org.springframework.security.web.access.ExceptionTranslationFilter@65859b44, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f26425b]
+2020-06-23 22:59:54.658 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 22:59:54.677 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 22:59:54.679 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 22:59:56.085 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 22:59:56.437 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 22:59:56.444 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.596 seconds (JVM running for 6.292)
+2020-06-23 23:00:04.272 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 23:00:04.272 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 23:00:04.279 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 7 ms
+2020-06-23 23:02:07.525 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 23:02:07.527 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 23:02:18.631 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 15960 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 23:02:18.634 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 23:02:19.292 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 23:02:19.335 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+2020-06-23 23:02:19.568 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7979b8b7' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 23:02:19.571 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 23:02:19.754 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 23:02:19.761 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 23:02:19.761 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 23:02:19.761 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 23:02:19.763 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 23:02:19.763 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 23:02:19.763 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 23:02:19.766 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 23:02:19.850 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 23:02:19.850 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1173 ms
+2020-06-23 23:02:20.049 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 23:02:20.302 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 23:02:20.835 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12cd129c, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c70d7f0, org.springframework.security.web.header.HeaderWriterFilter@63e4484d, org.springframework.web.filter.CorsFilter@1a717d79, org.springframework.security.web.csrf.CsrfFilter@4e5c8ef3, org.springframework.security.web.authentication.logout.LogoutFilter@7871d261, com.yang.blog.security.filter.JwtLoginFilter@4cb00fa5, com.yang.blog.security.filter.JwtAuthenticationFilter@13aed42b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e6bd263, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58601e7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@698d6d30, org.springframework.security.web.session.SessionManagementFilter@77663cd7, org.springframework.security.web.access.ExceptionTranslationFilter@799c8758, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c91fe86]
+2020-06-23 23:02:20.870 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 23:02:20.889 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 23:02:20.891 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 23:02:22.305 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 23:02:22.642 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 23:02:22.648 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.339 seconds (JVM running for 6.012)
+2020-06-23 23:02:30.305 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 23:02:30.306 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 23:02:30.313 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 7 ms
+2020-06-23 23:05:02.360 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 23:05:02.362 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 23:05:09.567 [main] INFO  [com.yang.blog.BlogServeApplication:55] - Starting BlogServeApplication on DESKTOP-DANHAID with PID 9392 (D:\code\mycode\blog\blog\blog-serve\target\classes started by 杨洋 in D:\code\mycode\blog\blog\blog-serve)
+2020-06-23 23:05:09.570 [main] INFO  [com.yang.blog.BlogServeApplication:651] - No active profile set, falling back to default profiles: default
+2020-06-23 23:05:10.190 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-23 23:05:10.232 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:187] - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
+2020-06-23 23:05:10.458 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4110765e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 23:05:10.462 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:335] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-23 23:05:10.643 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 9528 (http)
+2020-06-23 23:05:10.650 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-9528"]
+2020-06-23 23:05:10.650 [main] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2020-06-23 23:05:10.650 [main] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 23:05:10.651 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-06-23 23:05:10.651 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-23 23:05:10.652 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-23 23:05:10.654 [main] INFO  [org.apache.catalina.core.AprLifecycleListener:173] - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-06-23 23:05:10.739 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2020-06-23 23:05:10.740 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1136 ms
+2020-06-23 23:05:10.932 [main] INFO  [c.a.d.s.b.a.DruidDataSourceAutoConfigure:56] - Init DruidDataSource
+2020-06-23 23:05:11.180 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 23:05:11.700 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44da7eb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@19b9f903, org.springframework.security.web.header.HeaderWriterFilter@78065fcd, org.springframework.web.filter.CorsFilter@5e69cf07, org.springframework.security.web.csrf.CsrfFilter@6734ff92, org.springframework.security.web.authentication.logout.LogoutFilter@1d1bf7bf, com.yang.blog.security.filter.JwtLoginFilter@3d512652, com.yang.blog.security.filter.JwtAuthenticationFilter@2c2e3460, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28cb86b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b476233, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b96f8b0, org.springframework.security.web.session.SessionManagementFilter@51ed2f68, org.springframework.security.web.access.ExceptionTranslationFilter@13aed42b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23ea8830]
+2020-06-23 23:05:11.735 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-9528"]
+2020-06-23 23:05:11.753 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 9528 (http) with context path ''
+2020-06-23 23:05:11.755 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:49] - Triggering deferred initialization of Spring Data repositories…
+2020-06-23 23:05:13.135 [task-1] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 23:05:13.490 [main] INFO  [o.s.d.r.c.DeferredRepositoryInitializationListener:53] - Spring Data repositories initialized!
+2020-06-23 23:05:13.496 [main] INFO  [com.yang.blog.BlogServeApplication:61] - Started BlogServeApplication in 4.228 seconds (JVM running for 5.86)
+2020-06-23 23:05:33.389 [http-nio-9528-exec-1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 23:05:33.389 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2020-06-23 23:05:33.395 [http-nio-9528-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 6 ms
+2020-06-23 23:07:24.057 [SpringContextShutdownHook] INFO  [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-23 23:07:24.058 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
