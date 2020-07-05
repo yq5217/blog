@@ -3,6 +3,7 @@ package com.yang.blog.until;
 import com.yang.blog.security.configuration.TokenAuthenticationHelper;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 /**
  * Created by 2020/6/26
@@ -11,17 +12,9 @@ import io.jsonwebtoken.Jwts;
  */
 public class UserUntil {
 
-    private static final String SECRET_KEY = "ThisIsASpringSecurityDemo";
-
-    public static String getUserByToken(String token){
-        if (token != null){
-            Claims claims = Jwts.parser()
-                    .setSigningKey(SECRET_KEY)
-                    .parseClaimsJws(token)
-                    .getBody();
-            return (String)claims.get("sub");
-        }
-        return null;
+    public static String getUser(){
+        String username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        return username;
     }
 
 }

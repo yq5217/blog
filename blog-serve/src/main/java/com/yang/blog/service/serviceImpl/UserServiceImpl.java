@@ -21,7 +21,8 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     public ResJson<User> getUserInfo(String token){
-        User user=  userMapper.findByUsername(UserUntil.getUserByToken(token));
+        System.out.println(token);
+        User user=  userMapper.findByUsername(UserUntil.getUser());
         return ResJson.createBySuccess(user);
     }
 }

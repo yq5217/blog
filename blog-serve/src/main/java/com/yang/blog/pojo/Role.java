@@ -1,5 +1,6 @@
 package com.yang.blog.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -42,6 +43,7 @@ public class Role implements Serializable {
      * 添加时间*/
     @CreatedDate
     @Column(name = "create_time")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
     private Date createTime;
 
     /**
@@ -49,6 +51,7 @@ public class Role implements Serializable {
      */
     @LastModifiedDate
     @Column(name = "update_time")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
     private Date updateTime;
 
     @Column(name = "state", length = 8)

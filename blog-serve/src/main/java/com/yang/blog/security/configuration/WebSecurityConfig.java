@@ -106,8 +106,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 // 开启 csrf
                 .csrf()
-                // .disable();
-                .ignoringAntMatchers(PERMIT_ALL_MAPPING);
+                .disable();
+                //.ignoringAntMatchers(PERMIT_ALL_MAPPING);
     }
 
 

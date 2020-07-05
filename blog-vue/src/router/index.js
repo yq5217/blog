@@ -82,6 +82,38 @@ export const asyncRoutes = [
       }
     ]
   },
+  {
+    path: '/article',
+    component: Layout,
+    redirect: 'noRedirect',
+    name: 'Article',
+    hidden: false,
+    meta: {
+      title: '文章管理',
+      icon: ''
+    },
+    children: [
+      {
+        path: 'create',
+        component: () => import('@/views/article/create'),
+        name: 'CreateArticle',
+        meta: { title: '写文章', icon: 'edit' }
+      },
+      {
+        path: 'edit/:id(\\d+)',
+        component: () => import('@/views/article/edit'),
+        name: 'EditArticle',
+        meta: { title: '修改文章', noCache: true, activeMenu: '/list' },
+        hidden: true
+      },
+      {
+        path: 'list',
+        component: () => import('@/views/article/list'),
+        name: 'Page401',
+        meta: { title: '文章列表', noCache: true }
+      }
+    ]
+  },
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: false }
 ]

@@ -1,5 +1,6 @@
 package com.yang.blog.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
@@ -53,6 +54,7 @@ public class User implements Serializable {
      * 添加时间*/
     @CreatedDate
     @Column(name = "create_time")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
     private Date createTime;
 
     /**
@@ -60,6 +62,7 @@ public class User implements Serializable {
      */
     @LastModifiedDate
     @Column(name = "update_time")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
     private Date updateTime;
 
     @Column(name = "type", length = 8)

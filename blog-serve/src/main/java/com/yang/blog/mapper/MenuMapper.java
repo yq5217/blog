@@ -12,5 +12,4 @@ import java.util.List;
  */
 public interface MenuMapper extends JpaRepository<Menu, String> {
 
-    public List<Menu> findAll();
 }
