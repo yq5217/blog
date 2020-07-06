@@ -57,7 +57,6 @@ public class User implements Serializable {
     @CreatedDate
     @Column(name = "create_time")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
-    @CreationTimestamp
     private Date createTime;
 
     /**
@@ -66,7 +65,6 @@ public class User implements Serializable {
     @LastModifiedDate
     @Column(name = "update_time")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
-    @UpdateTimestamp
     private Date updateTime;
 
     @Column(name = "type", length = 8)
