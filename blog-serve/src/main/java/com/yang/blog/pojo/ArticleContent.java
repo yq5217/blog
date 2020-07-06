@@ -1,7 +1,10 @@
 package com.yang.blog.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.stereotype.Component;
@@ -18,6 +21,7 @@ import java.util.Date;
 @Entity
 @Table(name = "tb_article_content")
 @Component
+@DynamicUpdate
 public class ArticleContent implements Serializable {
 
     @Id
@@ -48,7 +52,8 @@ public class ArticleContent implements Serializable {
     private Date updateTime;
 
     @OneToOne(targetEntity = ArticleInfo.class)
-    @JoinColumn(name = "id", referencedColumnName = "article_id")
+    @JoinColumn(name = "id", referencedColumnName = "articleInfo_articleId")
+    @UpdateTimestamp
     private ArticleInfo articleInfo;
 
     public String getId() {

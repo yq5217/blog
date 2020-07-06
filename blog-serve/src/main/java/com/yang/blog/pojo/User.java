@@ -3,7 +3,9 @@ package com.yang.blog.pojo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.stereotype.Component;
@@ -55,6 +57,7 @@ public class User implements Serializable {
     @CreatedDate
     @Column(name = "create_time")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
+    @CreationTimestamp
     private Date createTime;
 
     /**
@@ -63,6 +66,7 @@ public class User implements Serializable {
     @LastModifiedDate
     @Column(name = "update_time")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", locale="zh", timezone="GMT+8")
+    @UpdateTimestamp
     private Date updateTime;
 
     @Column(name = "type", length = 8)

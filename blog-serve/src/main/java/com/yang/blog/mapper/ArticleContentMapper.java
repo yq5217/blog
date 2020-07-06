@@ -13,4 +13,6 @@ import javax.annotation.Resource;
 @Resource
 public interface ArticleContentMapper extends JpaRepository<ArticleContent, String> {
 
+    java.util.Optional<ArticleContent> findByArticleId(String id);
+
 }

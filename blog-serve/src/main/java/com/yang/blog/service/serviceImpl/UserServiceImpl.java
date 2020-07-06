@@ -20,9 +20,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public ResJson<User> getUserInfo(String token){
-        System.out.println(token);
+    public User getUserInfo(){
         User user=  userMapper.findByUsername(UserUntil.getUser());
-        return ResJson.createBySuccess(user);
+        return user;
     }
 }

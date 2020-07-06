@@ -100,7 +100,7 @@ export const asyncRoutes = [
         meta: { title: '写文章', icon: 'edit' }
       },
       {
-        path: 'edit/:id(\\d+)',
+        path: 'edit/:id',
         component: () => import('@/views/article/edit'),
         name: 'EditArticle',
         meta: { title: '修改文章', noCache: true, activeMenu: '/list' },

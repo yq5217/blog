@@ -24,7 +24,7 @@ public class UserController {
 
     @RequestMapping("getUserInfo")
     @ResponseBody
-    public ResJson<User> getUserInfo(String token){
-        return userService.getUserInfo(token);
+    public ResJson<User> getUserInfo(){
+        return ResJson.createBySuccess(userService.getUserInfo());
     }
 }

@@ -10,5 +10,5 @@ import com.yang.blog.until.ResJson;
  */
 public interface UserService {
 
-    public ResJson<User> getUserInfo(String token);
+    public User getUserInfo();
 }
