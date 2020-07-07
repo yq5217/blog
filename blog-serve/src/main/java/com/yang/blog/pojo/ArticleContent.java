@@ -52,7 +52,7 @@ public class ArticleContent implements Serializable {
     private Date updateTime;
 
     @OneToOne(targetEntity = ArticleInfo.class)
-    @JoinColumn(name = "id", referencedColumnName = "articleInfo_articleId")
+    @JoinColumn(name = "article_id", referencedColumnName = "id", insertable = false, updatable = false)
     private ArticleInfo articleInfo;
 
     public String getId() {

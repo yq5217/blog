@@ -51,11 +51,6 @@ public class ArticleServiceImpl implements ArticleService {
         try {
             ArticleContent articleContent = new ObjectMapper().readValue(article, ArticleContent.class);
             ArticleInfo articleInfo = articleContent.getArticleInfo();
-            articleContent.setCreateTime(null);
-            articleContent.setUpdateTime(null);
-            articleInfo.setCreateTime(null);
-            articleInfo.setUpdateTime(null);
-
             //获得用户信息
             User user = userService.getUserInfo();
             //保存文章详情
