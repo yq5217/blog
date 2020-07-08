@@ -7,7 +7,7 @@
       :on-success="handleImageSuccess"
       class="image-uploader"
       drag
-      action="https://httpbin.org/post"
+      action="http://127.0.0.1:9528/file/savefile"
     >
       <i class="el-icon-upload" />
       <div class="el-upload__text">
