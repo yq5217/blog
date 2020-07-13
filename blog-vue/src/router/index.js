@@ -110,7 +110,7 @@ export const asyncRoutes = [
         path: 'list',
         component: () => import('@/views/article/list'),
         name: 'Page401',
-        meta: { title: '文章列表', noCache: true }
+        meta: { title: '文章列表', noCache: true, icon: 'education' }
       }
     ]
   },

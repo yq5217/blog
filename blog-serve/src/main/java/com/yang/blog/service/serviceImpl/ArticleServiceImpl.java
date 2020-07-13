@@ -11,6 +11,7 @@ import com.yang.blog.service.ArticleService;
 import com.yang.blog.service.UserService;
 import com.yang.blog.until.ResJson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +25,9 @@ import java.util.Optional;
 @Service
 public class ArticleServiceImpl implements ArticleService {
 
+    @Value("${file.prefix}")
+    private String prefix;
+
     @Autowired
     private ArticleInfoMapper articleInfoMapper;
 
@@ -35,10 +39,14 @@ public class ArticleServiceImpl implements ArticleService {
 
     public ResJson findInfoAll(){
         List<ArticleInfo> list = articleInfoMapper.findAll();
+        list.forEach(articleInfo -> {
+            articleInfo.setHeadeImage(prefix + articleInfo.getHeadeImage());
+        });
         return ResJson.createBySuccess(list);
     }
     public ResJson findContentById(String id){
         Optional<ArticleContent> articleContent = articleContentMapper.findByArticleId(id);
+        articleContent.get().getArticleInfo().setHeadeImage(prefix + articleContent.get().getArticleInfo().getHeadeImage());
         return ResJson.createBySuccess(articleContent.get());
     }
 

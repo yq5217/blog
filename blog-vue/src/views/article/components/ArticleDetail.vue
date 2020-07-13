@@ -23,10 +23,17 @@
             <div class="postInfo-container">
               <el-row>
                 <el-col :span="8">
-                  <el-form-item label-width="60px" label="Author:" class="postInfo-container-item">
+                  <el-form-item label-width="60px" label="作者:" class="postInfo-container-item">
                     <el-select v-model="postForm.articleInfo.author" :remote-method="getRemoteUserList" filterable default-first-option remote placeholder="Search user">
                       <el-option v-for="(item,index) in userListOptions" :key="item+index" :label="item" :value="item" />
                     </el-select>
+                  </el-form-item>
+                </el-col>
+                <el-col :span="6">
+                  <el-form-item label-width="60px" label="分类:" class="postInfo-container-item">
+                  <el-cascader v-model="postForm.articleInfo.sortId" :remote-method="getSortList" filterable default-first-option remote placeholder="分类">
+                    <el-option v-for="(item,index) in sortListOptions" :key="index" :label="item" :value="index" />
+                  </el-cascader>
                   </el-form-item>
                 </el-col>
 
@@ -34,9 +41,6 @@
 
                 </el-col>
 
-                <el-col :span="6">
-
-                </el-col>
               </el-row>
             </div>
           </el-col>
@@ -66,6 +70,7 @@ import MDinput from '@/components/MDinput'
 import Sticky from '@/components/Sticky' // 粘性header组件
 import { validURL } from '@/utils/validate'
 import { fetchArticle, saveArticle } from '@/api/article'
+import { fetchSortList } from '@/api/sort'
 //import { searchUser } from '@/api/remote-search'
 
 const defaultForm = {
@@ -124,7 +129,8 @@ export default {
     return {
       postForm: Object.assign({}, defaultForm),
       loading: false,
-      userListOptions: [],
+      userListOptions: [],//拉去作者表
+      sortListOptions: [],
       rules: {
         image_uri: [{ validator: validateRequire }],
         title: [{ validator: validateRequire }],
@@ -158,6 +164,7 @@ export default {
     }
 
     this.tempRoute = Object.assign({}, this.$route)
+    this.getSortList()
   },
   methods: {
     fetchData(id) {
@@ -224,10 +231,18 @@ export default {
       this.postForm.articleInfo.state = 'draft'
     },
     getRemoteUserList(query) {
+      console.log(quert);
       /*searchUser(query).then(response => {
         if (!response.data.items) return
         this.userListOptions = response.data.items.map(v => v.name)
       })*/
+    },
+    getSortList() {
+      fetchSortList().then(response => {
+        if (!response.result) return
+        this.sortListOptions = response.result
+        console.log(this.sortListOptions)
+      })
     }
   }
 }
